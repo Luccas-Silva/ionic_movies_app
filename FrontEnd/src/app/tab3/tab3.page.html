@@ -22,7 +22,7 @@
           <div>
             <h1>{{filme.nome}}</h1>
             <p>{{filme.lancamento}}</p>
-            <ion-badge color="medium" *ngFor="let genero of filme.generos">
+            <ion-badge color="primary" *ngFor="let genero of filme.generos">
               {{genero}}
             </ion-badge>
             <ion-icon name="star" [color]="filme.favorito===true ? 'warning' : ('light')"></ion-icon>

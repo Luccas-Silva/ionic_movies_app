@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 /* eslint-disable @typescript-eslint/dot-notation */
-import { IFilme } from './../model/IFilme';
+import { IFilme } from '../model/IFilme';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

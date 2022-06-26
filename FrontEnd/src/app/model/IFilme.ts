@@ -1,10 +1,10 @@
 export interface IFilme{
-  nome: string;
-  lancamento: string;
-  duracao: string;
-  classificacao: number;
-  cartaz: string;
-  generos: string[];
-  pagina?: string; 
+  nome: string; //nome
+  lancamento: string; //idade
+  duracao: string; // data de nascimento
+  classificacao: number; // nota do ator
+  cartaz: string; // foto 
+  generos: string[]; // trabalhos
   favorito: boolean;
+  sinopse: string
 }

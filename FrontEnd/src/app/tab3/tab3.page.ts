@@ -18,25 +18,75 @@ export class Tab3Page {
 
   listaFilmes: IFilme[] = [
     {
-      nome: 'Mortal Kombat (2021)',
-      lancamento: '15/04/2021',
-      duracao: '1h50m',
-      classificacao: 9,
-      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg',
-      generos: ['Ação', 'Fantasia', 'Aventura'],
-      pagina: '/mortal-kombat',
-      favorito: false
+      nome: 'Cillian Murphy',
+      lancamento: 'Idade 46',
+      duracao: '1976-05-25',
+      classificacao: 10,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i8dOTC0w6V274ev5iAAvo4Ahhpr.jpg',
+      generos: ['Peaky Blinders', 'Batman', 'A Origem'],
+      favorito: false,
+      sinopse: ""
     },
     {
-      nome: 'Vingadores: Ultimato (2019)',
-      lancamento: '25/04/2019 (BR)',
-      duracao: '3h01m',
-      classificacao: 6,
-      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg',
-      generos: ['Aventura', 'Ficção científica', 'Ação'],
-      pagina: '/avengers',
-      favorito: false
-    }
+      nome: 'Erin Moriarty',
+      lancamento: 'Idade 28',
+      duracao: '1994-06-24',
+      classificacao: 8,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zY3ZMEXAmhU7hQO0B4Y3444rTHm.jpg',
+      generos: ['The Boys ', 'Capitão Fantástico'],
+      favorito: false,
+      sinopse: ""
+    },
+    {
+      nome: 'Tom Holland',
+      lancamento: 'Idade 26',
+      duracao: '1996-06-01',
+      classificacao: 8,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bBRlrpJm9XkNSg0YT5LCaxqoFMX.jpg',
+      generos: ['Vingadores', 'Homem-Aranha', 'Homem-Aranha'],
+      favorito: false,
+      sinopse: ""
+    },
+    {
+      nome: 'Elizabeth Olsen',
+      lancamento: 'Idade 33',
+      duracao: '1989-02-16',
+      classificacao: 9,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wIU675y4dofIDVuhaNWPizJNtep.jpg',
+      generos: ['Vingadores', 'Doutor Estranho', 'Vingadores'],
+      favorito: false,
+      sinopse: ""
+    },
+    {
+      nome: 'Tom Hardy',
+      lancamento: 'Idade 44',
+      duracao: '1977-09-15',
+      classificacao: 10,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sGMA6pA2D6X0gun49igJT3piHs3.jpg',
+      generos: ['Peaky Blinders', 'Mad Max', 'Venom'],
+      favorito: false,
+      sinopse: ""
+    },
+    {
+      nome: 'Dominique McElligott',
+      lancamento: 'Idade 36',
+      duracao: '1986-03-05',
+      classificacao: 7,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/99Pbu6HYwrBcX10RDf7ttUh6fO9.jpg',
+      generos: ['The boys', 'Lunar'],
+      favorito: false,
+      sinopse: ""
+    },
+    {
+      nome: 'Aidan Gallagher',
+      lancamento: 'Idade 18',
+      duracao: '2003-09-18',
+      classificacao: 10,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zwOMopF4dAAvA6Lexr2dxJ9qBlD.jpg',
+      generos: ['The Umbrella Academy', 'Família Moderna'],
+      favorito: false,
+      sinopse: ""
+    },
   ];
   exibirFilme(filme: IFilme){
     const navigationExtras: NavigationExtras = {state:{paramFilme:filme}};
