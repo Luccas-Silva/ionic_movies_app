@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{filme.nome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="filme">
+    <ion-card-header>
+      <img *ngIf="filme.cartaz" src="{{filme.cartaz}}" />
+      <ion-icon *ngIf="!filme.cartaz" name="videocam-off"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{filme.nome}} <ion-icon name="star" [color]="filme.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
+      <p>{{filme.lancamento}}
+        <ion-chip [color]="filme.classificacao < 5 ? 'danger' : ((filme.classificacao < 7 ? 'warning' : 'success'))"
+          outline>
+          <ion-label>{{filme.classificacao}}</ion-label>
+        </ion-chip>
+      </p>
+    </ion-card-content>
+    <ion-item>
+      <ion-badge color="primary" *ngFor="let genero of filme.generos">{{genero}}</ion-badge>
+    </ion-item>
+    <ion-card-content>
+      <h1>Sinopse:</h1>
+      <p>
+        Lorem ipsum dolor sit amet. Vel provident minima non sequi voluptatem in omnis galisum et voluptatem quis qui magnam quae aut labore officiis et earum minus. Sed officiis cupiditate id molestiae tempora sed velit harum ad voluptas dolores eum explicabo vitae.
+        Et galisum nulla qui temporibus numquam ut optio accusantium. Ex facilis sunt ut nesciunt aspernatur ut veniam nesciunt et dicta perferendis!
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

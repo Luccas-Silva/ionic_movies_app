@@ -1,5 +1,4 @@
-export interface ISeries{
-
+export interface ISerie{
   nome: string;
   lancamento: string;
   duracao: string;
@@ -8,5 +7,4 @@ export interface ISeries{
   generos: string[];
   pagina?: string;
   favorito: boolean;
-    
-  }
+}
