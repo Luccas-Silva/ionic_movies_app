@@ -1,6 +1,6 @@
 <div className="Movies-app">
   <h1>
-    <img align="center" alt="react" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"/>
+    <img align="center" alt="ionic" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/ionic/ionic-original.svg"/>
     Movies app
   </h1>
 </div>
