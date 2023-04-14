@@ -11,7 +11,7 @@
 - `HTML`
 - `CSS`
 - `SCSS`
-- `JavaScrip`
+- `TypeScript`
 - `Ionic`
 
 ## Design do app
